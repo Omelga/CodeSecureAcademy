@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoracions - CodeSecure Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="estudios.html">Estudis</a></li>
+                <li><a href="inscripcion.html">Inscripció</a></li>
+                <li><a href="quienes-somos.html">Qui som?</a></li>
+                <li><a href="valoracion.html" class="active">Valoracions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="valoracions">
+            <h2>Opinions dels nostres estudiants</h2>
+
+            <div id="valoracion-lista">
+                <div class="valoracion-item">
+                    <strong>Jordi Font</strong> - ⭐⭐⭐⭐⭐<br>
+                    <em>"Una acadèmia excel·lent, vaig aprendre molt sobre ciberseguretat."</em>
+                    <hr>
+                </div>
+                <div class="valoracion-item">
+                    <strong>Marina Torres</strong> - ⭐⭐⭐⭐☆<br>
+                    <em>"Els cursos són molt complets i els professors expliquen súper bé."</em>
+                    <hr>
+                </div>
+                <div class="valoracion-item">
+                    <strong>Álex Rovira</strong> - ⭐⭐⭐⭐⭐<br>
+                    <em>"Recomano totalment CodeSecure Academy, et prepara per al futur."</em>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-valoracio">
+            <h2>Deixa la teva valoració</h2>
+            <form id="valoracion-form">
+                <label for="valoracion-nombre">Nom:</label>
+                <input type="text" id="valoracion-nombre" required>
+
+                <label for="valoracion-puntuacion">Puntuació (1-5 estrelles):</label>
+                <select id="valoracion-puntuacion" required>
+                    <option value="1">⭐☆☆☆☆</option>
+                    <option value="2">⭐⭐☆☆☆</option>
+                    <option value="3">⭐⭐⭐☆☆</option>
+                    <option value="4">⭐⭐⭐⭐☆</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+
+                <label for="valoracion-comentario">Comentari:</label>
+                <textarea id="valoracion-comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar Valoració</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CodeSecure Academy | Contacte: codesecurea@gmail.com | Tel: 123-456-789</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
