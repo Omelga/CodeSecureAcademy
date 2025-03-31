@@ -90,7 +90,7 @@ p {
 
 /* =================== LISTAS =================== */
 ul {
-    text-align: left;
+    text-align: center;
     margin: 20px auto;
     display: inline-block;
 }
