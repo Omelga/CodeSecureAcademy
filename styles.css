@@ -1,32 +1,23 @@
 /* Estils generals */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Barra superior */
-.top-bar {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #d63384;
+/* Navegació */
+nav {
+    background-color: #333;
+    padding: 15px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -35,21 +26,18 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.contact-button {
-    background-color: #d63384;
     color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-/* Contenedor de contacto */
-.contact-container {
-    display: flex;
-    max-width: 1200px;
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Contingut principal */
+main {
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     background: white;
@@ -57,77 +45,44 @@ nav ul li a {
     border-radius: 10px;
 }
 
-.contact-info {
-    width: 50%;
-    padding: 20px;
+h1 {
+    text-align: center;
+    color: #333;
 }
 
-.contact-info h2 {
-    color: #d63384;
+/* Formulari de login */
+.login {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.contact-info p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.contact-info a {
-    color: #d63384;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Formulario */
-.contact-form {
-    width: 50%;
-    padding: 20px;
-}
-
-.contact-form h2 {
-    color: #d63384;
-}
-
-.contact-form label {
+.login input {
     display: block;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    width: 100%;
+    margin: 10px auto;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
 }
 
-.contact-form textarea {
-    height: 80px;
-    resize: none;
-}
-
-.checkbox-group {
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.contact-form button {
-    background-color: #d63384;
+.login button {
+    background-color: #f39c12;
     color: white;
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    margin-top: 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    width: 100%;
 }
 
-.contact-form button:hover {
-    background-color: #c22e76;
+.login button:hover {
+    background-color: #d68910;
+}
+
+/* Peu de pàgina */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
