@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactar - BemenFP</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
 
@@ -14,12 +15,12 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Inici</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="quienes-somos.html">Qui som</a></li>
                     <li><a href="estudios.html">Estudis</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="inscripcion.html">Inscripció</a></li>
-                    <li><a href="quienes-somos.html">Qui Som?</a></li>
-                    <li><a href="valoracion.html">Valoració</a></li>
-                    <li><a href="#" class="contact-button">Contactar</a></li>
+                    <li><a href="valoracion.html">Valoracions</a></li>
+                    <li><a href="contactar.html" class="contact-button">Contactar</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,61 +30,29 @@
         <section class="contact-container">
             <div class="contact-info">
                 <h2>Contacta'ns</h2>
-                <p><strong>C/ Cartellà, 48</strong><br> Sant Ferran, 19-25 - 08031 Barcelona</p>
-
-                <p><strong>Horari secretaria (de dilluns a divendres)</strong><br>
-                Matins: <span class="highlight">de 8.00 h a 14.00 h</span><br>
-                Tardes: <span class="highlight">de 15.00 h a 20.00 h</span><br>
-                Atenció <strong>presencial</strong>: si és possible amb <strong>cita prèvia</strong></p>
-
-                <p><strong>General</strong>: <a href="mailto:bemen3@bemen3.com">bemen3@bemen3.com</a></p>
-
-                <h3>Secretaria Acadèmica</h3>
-                <p>Ana Pérez / Atenció a l'Estudiant <a href="mailto:aperez@bemen3.cat">aperez@bemen3.cat</a></p>
-                <p>Isaac Tort / Secretaria Acadèmica <a href="mailto:itort@bemen3.cat">itort@bemen3.cat</a></p>
-
-                <h3>Administració</h3>
-                <p>Yolanda Durán / Dept. d'Administració Comptable <a href="mailto:comptabilitat@bemen3.cat">comptabilitat@bemen3.cat</a></p>
-                <p>Conchi García / Dept. d'Administració Laboral <a href="mailto:laboral@bemen3.cat">laboral@bemen3.cat</a></p>
-
-                <h3>Direcció</h3>
-                <p>Núria Celmendíez / Directora Pedagògica <a href="mailto:direccio@bemen3.cat">direccio@bemen3.cat</a></p>
+                <p><strong>Adreça:</strong> C/ Cartellà, 48, Sant Ferran, 08031 Barcelona</p>
+                <p><strong>Telèfon:</strong> 93 357 12 58</p>
+                <p><strong>Correu:</strong> <a href="mailto:bemen3@bemen3.com">bemen3@bemen3.com</a></p>
             </div>
 
             <div class="contact-form">
-                <h2>Demana informació sense compromís</h2>
-                <form action="#" method="post">
-                    <label for="cicle">Selecciona un cicle *</label>
-                    <select id="cicle" name="cicle" required>
-                        <option value="" disabled selected>Selecciona un cicle</option>
-                        <option value="cicle1">Cicle 1</option>
-                        <option value="cicle2">Cicle 2</option>
-                    </select>
-
-                    <label for="nom">Nom i cognom *</label>
-                    <input type="text" id="nom" name="nom" required>
+                <h2>Demana informació</h2>
+                <form id="contactForm">
+                    <label for="nom">Nom i Cognom *</label>
+                    <input type="text" id="nom" required>
 
                     <label for="email">Adreça electrònica *</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" required>
 
                     <label for="telefon">Telèfon *</label>
-                    <input type="tel" id="telefon" name="telefon" required>
+                    <input type="tel" id="telefon" required>
 
-                    <label for="missatge">En què et podem ajudar?</label>
-                    <textarea id="missatge" name="missatge"></textarea>
+                    <label for="missatge">Missatge *</label>
+                    <textarea id="missatge" required></textarea>
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacitat" required>
-                        <label for="privacitat">Consenteixo l'ús de les meves dades per als fins indicats en la política de privacitat.</label>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="publicitat">
-                        <label for="publicitat">Consenteixo l'ús de les meves dades personals per rebre publicitat de la seva entitat.</label>
-                    </div>
-
-                    <button type="submit">ENVIAR</button>
+                    <button type="submit">Enviar</button>
                 </form>
+                <p id="formMessage"></p>
             </div>
         </section>
     </main>
